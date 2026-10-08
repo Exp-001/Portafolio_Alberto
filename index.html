@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creador digital y editor de video para TikTok y Reels</title>
+    <meta name="description" content="Soy creador digital y edito videos para TikTok, Facebook Reels, Instagram y YouTube Shorts. Mira mis trabajos y cotiza por WhatsApp.">
+    <meta name="theme-color" content="#050505">
+    <link rel="canonical" href="https://TUUSUARIO.github.io/NOMBRE-REPO/">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://TUUSUARIO.github.io/NOMBRE-REPO/">
+    <meta property="og:title" content="Creador digital y editor de video">
+    <meta property="og:description" content="Edición de videos para TikTok, Reels y Shorts. Cotiza por WhatsApp.">
+    <meta property="og:image" content="https://TUUSUARIO.github.io/NOMBRE-REPO/imagenes/preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ProfessionalService","name":"Alberto Editor de Videos","url":"https://TUUSUARIO.github.io/NOMBRE-REPO/","description":"Creador digital y editor de video para redes sociales.","serviceType":["Edición de video para redes sociales","Asesoría de contenido","Creación de contenido"]}
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="filmmaker-mode">
+
+    <!-- ============================================
+         TRANSICIÓN DE COLOR
+    ============================================ -->
+
+    <div class="color-transition" id="colorTransition"></div>
+
+
+    <!-- ============================================
+         LUZ GLOBAL DEL MOUSE
+    ============================================ -->
+
+    <div class="global-mouse-light" id="globalMouseLight"></div>
+
+
+    <!-- ============================================
+         NAVBAR
+    ============================================ -->
+
+    <nav class="navbar" aria-label="Principal">
+
+        <div class="logo">
+            MI PORTAFOLIO
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#inicio">
+                Inicio
+            </a>
+
+            <a href="#servicios">
+                Servicios
+            </a>
+
+            <a href="#proyectos">
+                Proyectos
+            </a>
+
+            <button onclick="abrirPrecios()">
+                Precios
+            </button>
+
+            <a href="#contacto">
+                Contacto
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- ============================================
+             HERO
+        ============================================ -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-layout">
+
+
+                <!-- FILMMAKER -->
+
+                <div class="hero-side hero-side-left">
+
+                    <div class="btn-crown-wrap">
+                    <svg class="crown-top" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 19h18l1.5-11-5.5 4.5L12 4 7 12.5 1.5 8z"/></svg>
+                    <button
+                        class="selector-btn active"
+                        id="filmmakerBtn"
+                        onclick="mostrarSeccion('filmmaker')"
+                    >
+
+                        <span>●</span>
+
+                        CREADOR DIGITAL
+
+                    </button>
+                    </div>
+
+                </div>
+
+
+                <!-- IMAGEN PRINCIPAL -->
+
+                <div class="hero-image-container">
+
+                    <div class="hero-image">
+
+                        <div class="hero-glow"></div>
+
+                        <img
+                            src="imagenes/oso polar 252.png"
+                            alt="Imagen principal"
+                            id="mainImage"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- AGENCIA IA -->
+
+                <div class="hero-side hero-side-right">
+
+                    <div class="btn-soon-wrap">
+                    <button
+                        class="selector-btn coming-soon" aria-disabled="true"
+                        id="agencyBtn"
+                        onclick="muyPronto()"
+                    >
+
+                        <span>●</span>
+
+                        AGENCIA IA
+
+                    </button>
+                    <img class="soon-img" src="imagenes/muypronto.png" alt="Muy pronto">
+                    </div>
+
+                </div>
+
+
+                <!-- STICKERS -->
+
+                <div class="stickers-layer">
+
+                    <div class="hero-sticker sticker-1">
+                        ✦
+                    </div>
+
+                    <div class="hero-sticker sticker-2">
+                        ✧
+                    </div>
+
+                    <div class="hero-sticker sticker-3">
+                        ◆
+                    </div>
+
+                    <div class="hero-sticker sticker-4">
+                        ✦
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h1 class="hero-text">
+
+                Transformo ideas en
+                <span>proyectos digitales.</span>
+
+            </h1>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SERVICIOS
+        ================================================== -->
+
+        <section
+            class="services-section"
+            id="servicios"
+        >
+
+            <div class="services-header">
+
+                <div class="section-label">
+                    SERVICIOS
+                </div>
+
+                <h2>
+                    ¿Qué podemos crear?
+                </h2>
+
+                <p>
+                    Elige un servicio para conocer más.
+                </p>
+
+                <p class="platforms-line">Edito para TikTok · Facebook Reels · Instagram Reels · YouTube Shorts</p>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 FILMMAKER
+            ================================================== -->
+
+            <div
+                class="services-showcase filmmaker-services-showcase"
+                id="filmmakerServicesShowcase"
+            >
+
+                <article
+                    class="service-showcase-card"
+                    data-service="ediciones"
+                    onclick="openService('ediciones')" role="button" tabindex="0"
+                >
+
+                    <img
+                        loading="lazy" decoding="async" src="imagenes/ediciones.jpg"
+                        alt="Ediciones"
+                    >
+
+                    <div class="service-dark-overlay"></div>
+
+                    <div class="service-center-content">
+
+                        <h3>
+                            EDICIONES
+                        </h3>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="service-showcase-card"
+                    data-service="asesoria"
+                    onclick="openService('asesoria')" role="button" tabindex="0"
+                >
+
+                    <img
+                        loading="lazy" decoding="async" src="imagenes/asesor.jpg"
+                        alt="Asesoría"
+                    >
+
+                    <div class="service-dark-overlay"></div>
+
+                    <div class="service-center-content">
+
+                        <h3>
+                            ASESORÍA
+                        </h3>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="service-showcase-card"
+                    data-service="creador"
+                    onclick="openService('creador')" role="button" tabindex="0"
+                >
+
+                    <img
+                        loading="lazy" decoding="async" src="imagenes/creador de contenido.jpg"
+                        alt="Creador de contenido"
+                    >
+
+                    <div class="service-dark-overlay"></div>
+
+                    <div class="service-center-content">
+
+                        <h3>
+                            CREADOR DE
+                            <br>
+                            CONTENIDO
+                        </h3>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+
+            <!-- ==================================================
+                 AGENCIA IA
+            ================================================== -->
+
+            <div
+                class="services-showcase agency-services-showcase"
+                id="agencyServicesShowcase"
+            >
+
+                <article
+                    class="service-showcase-card"
+                    data-service="web"
+                    onclick="openService('web')" role="button" tabindex="0"
+                >
+
+                    <img
+                        loading="lazy" decoding="async" src="imagenes/web.jpg"
+                        alt="Páginas web"
+                    >
+
+                    <div class="service-dark-overlay"></div>
+
+                    <div class="service-center-content">
+
+                        <h3>
+                            PÁGINAS WEB
+                        </h3>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="service-showcase-card"
+                    data-service="bots"
+                    onclick="openService('bots')" role="button" tabindex="0"
+                >
+
+                    <img
+                        loading="lazy" decoding="async" src="imagenes/bots.jpg"
+                        alt="Bots de IA"
+                    >
+
+                    <div class="service-dark-overlay"></div>
+
+                    <div class="service-center-content">
+
+                        <h3>
+                            BOTS DE IA
+                        </h3>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="service-showcase-card"
+                    data-service="automatizaciones"
+                    onclick="openService('automatizaciones')" role="button" tabindex="0"
+                >
+
+                    <img
+                        loading="lazy" decoding="async" src="imagenes/automatizaciones.jpg"
+                        alt="Automatizaciones"
+                    >
+
+                    <div class="service-dark-overlay"></div>
+
+                    <div class="service-center-content">
+
+                        <h3>
+                            AUTOMATIZACIONES
+                        </h3>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="service-showcase-card"
+                    data-service="sistemas"
+                    onclick="openService('sistemas')" role="button" tabindex="0"
+                >
+
+                    <img
+                        loading="lazy" decoding="async" src="imagenes/sistemas.jpg"
+                        alt="Sistemas"
+                    >
+
+                    <div class="service-dark-overlay"></div>
+
+                    <div class="service-center-content">
+
+                        <h3>
+                            SISTEMAS
+                        </h3>
+
+                        <span class="service-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+       <!-- PROYECTOS -->
+<section class="projects-section" id="proyectos">
+    <div class="projects-header">
+        <div class="section-label">PROYECTOS</div>
+        <h2>Lo que estoy creando</h2>
+        <p>Una muestra de mi contenido y trabajos.</p>
+    </div>
+
+    <div class="projects-carousel" id="projectsCarousel">
+    <button class="carousel-btn prev" aria-label="Anterior" onclick="moverCarrusel(-1)">‹</button>
+    <div class="projects-showcase" id="projectsTrack">
+
+        <!-- MI TIKTOK -->
+        <article class="project-showcase-card">
+            <div class="project-image">
+                <img loading="lazy" decoding="async" src="imagenes/mitiktok.png" alt="Mi TikTok">
+                <div class="project-overlay"></div>
+
+                <div class="project-content">
+                    <span class="project-category">CONTENIDO</span>
+                    <h3>MI TIKTOK</h3>
+                    <p>Mi contenido como creador y editor.</p>
+
+                    <a href="https://www.tiktok.com/@alberto_editordevideos" target="_blank" rel="noopener noreferrer" class="project-button">
+                        VER EN TIKTOK <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        
+        <article class="project-showcase-card project-featured">
+            <div class="project-image">
+                <img loading="lazy" decoding="async" src="imagenes/link.jpg" alt="Mi mejor trabajo">
+                <div class="project-overlay"></div>
+
+                <div class="project-content">
+                    <span class="project-category">EDICIÓN</span>
+                    <h3>MI MEJOR TRABAJO</h3>
+                    <p>Una selección del trabajo que más representa mi estilo.</p>
+
+                    <a href="https://www.tiktok.com/@alberto_editordevideos" target="_blank" rel="noopener noreferrer" class="project-button">
+                        VER PROYECTO <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        
+        <article class="project-showcase-card">
+            <div class="project-image">
+                <img loading="lazy" decoding="async" src="imagenes/poke.jpg" alt="Mi TikTok de diversión">
+                <div class="project-overlay"></div>
+
+                <div class="project-content">
+                    <span class="project-category">PERSONAL</span>
+                    <h3>MI TIKTOK DE DIVERSIÓN</h3>
+                    <p>Contenido más libre, experimental y divertido.</p>
+
+                    <a href="https://www.tiktok.com/@albertoalemanvaldez" target="_blank" rel="noopener noreferrer" class="project-button">
+                        VER EN TIKTOK <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+    </div>
+    <button class="carousel-btn next" aria-label="Siguiente" onclick="moverCarrusel(1)">›</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+</section>
+
+        <!-- ==================================================
+             CONTACTO
+        ================================================== -->
+
+        <section
+            class="contact-section"
+            id="contacto"
+        >
+
+            <h2>
+                ¿Tienes un proyecto?
+            </h2>
+
+            <p>
+                Hablemos sobre lo que podemos crear.
+            </p>
+
+            <button
+                class="whatsapp-button"
+                onclick="contactarWhatsApp()"
+            >
+                Contactar por WhatsApp
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         VENTANA DE SERVICIO
+    ================================================== -->
+
+    <div
+        class="service-detail"
+        id="serviceDetail" role="dialog" aria-modal="true"
+    >
+
+        <div class="service-detail-inner">
+
+
+            <button
+                class="service-detail-close"
+                onclick="closeService()"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+
+            <div class="service-detail-image">
+
+                <img
+                    id="serviceDetailImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="service-detail-content">
+
+                <h2
+                    class="service-detail-title"
+                    id="serviceDetailTitle"
+                >
+                </h2>
+
+                <p
+                    class="service-detail-description"
+                    id="serviceDetailDescription"
+                >
+                </p>
+
+
+                <!-- CONTENIDO DINÁMICO -->
+
+                <div
+                    class="service-detail-sections"
+                    id="serviceDetailSections"
+                >
+                </div>
+
+
+                <button
+                    class="whatsapp-button"
+                    onclick="contactarWhatsApp()"
+                >
+                    Hablemos del proyecto
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         MODAL PRECIOS
+    ================================================== -->
+
+    <div
+        class="price-modal"
+        id="priceModal" role="dialog" aria-modal="true" aria-label="Precios"
+    >
+
+        <div class="price-modal-content">
+
+            <button
+                class="modal-close"
+                onclick="cerrarPrecios()"
+            >
+                ×
+            </button>
+
+            <h2>
+                PRECIOS
+            </h2>
+
+
+            <div class="price-tabs">
+
+                <button
+                    class="active"
+                    onclick="mostrarPrecios('filmmaker')"
+                >
+                    CREADOR DIGITAL
+                </button>
+
+                <button
+                    class="coming-soon" aria-disabled="true" onclick="muyPronto()"
+                >
+                    AGENCIA IA <small class="soon-note">MUY PRONTO</small>
+                </button>
+
+            </div>
+
+
+            <div
+                class="price-grid"
+                id="priceGrid"
+            ></div>
+        </div>
+    </div>
+
+    <!-- ==================================================
+         JAVASCRIPT
+    ================================================== -->
+
+    <script>
+
+        /* ============================================
+           DATOS DE SERVICIOS
+        ============================================ */
+
+        const servicesData = {
+
+            ediciones: {
+
+                image: "imagenes/ediciones.jpg",
+
+                title: "EDICIONES",
+
+                description:
+                    "Edición de videos pensada para TikTok, Reels, Shorts y redes sociales, buscando mejorar la retención y mantener el interés del espectador.",
+
+                sections: [
+                    
+                    
+                ]
+
+            },
+
+
+            asesoria: {
+
+                image: "imagenes/asesor.jpg",
+
+                title: "ASESORÍA",
+
+                description:
+                    "Te ayudo a convertir una idea en contenido más claro, atractivo y pensado para la plataforma.",
+
+                sections: [
+
+                    {
+                        title: "Contenido",
+
+                        items: [
+
+                            {
+                                name: "Idea y concepto",
+                                text: "Analizamos qué quieres comunicar y buscamos una forma más clara de presentarlo."
+                            },
+
+                            {
+                                name: "Estructura",
+                                text: "Organizamos el contenido para que tenga un inicio fuerte, desarrollo claro y cierre."
+                            },
+
+                            {
+                                name: "Presentación",
+                                text: "Buscamos que el contenido sea fácil de entender y atractivo para la audiencia."
+                            }
+
+                        ]
+
+                    },
+
+
+                    {
+                        title: "Plataformas",
+
+                        items: [
+
+                            {
+                                name: "TikTok",
+                                text: "Orientación para adaptar el contenido al formato vertical y al consumo rápido."
+                            },
+
+                            {
+                                name: "Reels y Shorts",
+                                text: "Adaptación del contenido para diferentes plataformas de video corto."
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            },
+
+
+            creador: {
+
+                image: "imagenes/creador de contenido.jpg",
+
+                title: "CREADOR DE CONTENIDO",
+
+                description:
+                    "Desarrollo de contenido desde la idea hasta una pieza lista para publicar.",
+
+                sections: [
+
+                    {
+                        title: "Proceso Creativo",
+
+                        items: [
+
+                            {
+                                name: "Ideas",
+                                text: "Desarrollo de conceptos de contenido según el objetivo y público."
+                            },
+
+                            {
+                                name: "Guion",
+                                text: "Organización de la idea para convertirla en un contenido claro y fácil de consumir."
+                            },
+
+                            {
+                                name: "Producción",
+                                text: "Desarrollo de piezas de contenido pensadas para redes sociales."
+                            }
+
+                        ]
+
+                    },
+
+
+                    {
+                        title: "Objetivo",
+
+                        items: [
+
+                            {
+                                name: "Identidad",
+                                text: "Buscamos construir un estilo reconocible para el contenido."
+                            },
+
+                            {
+                                name: "Constancia",
+                                text: "Creación de una estructura que permita producir contenido de forma más organizada."
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            },
+
+
+            web: {
+
+                image: "imagenes/web.jpg",
+
+                title: "PÁGINAS WEB",
+
+                description:
+                    "Páginas web modernas para mostrar proyectos, servicios o negocios.",
+
+                sections: [
+
+                    {
+                        title: "Desarrollo",
+
+                        items: [
+
+                            {
+                                name: "Diseño adaptable",
+                                text: "Páginas preparadas para computadora, tablet y celular."
+                            },
+
+                            {
+                                name: "Diseño visual",
+                                text: "Interfaces modernas enfocadas en presentar la información de forma clara."
+                            },
+
+                            {
+                                name: "Integraciones",
+                                text: "Conexión con diferentes herramientas y servicios según las necesidades del proyecto."
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            },
+
+
+            bots: {
+
+                image: "imagenes/bots.jpg",
+
+                title: "BOTS DE IA",
+
+                description:
+                    "Bots que utilizan inteligencia artificial para automatizar tareas y responder a usuarios.",
+
+                sections: [
+
+                    {
+                        title: "Funciones",
+
+                        items: [
+
+                            {
+                                name: "Respuestas automáticas",
+                                text: "Sistemas capaces de responder preguntas y solicitudes de los usuarios."
+                            },
+
+                            {
+                                name: "Inteligencia artificial",
+                                text: "Uso de IA para generar respuestas más flexibles y adaptadas al contexto."
+                            },
+
+                            {
+                                name: "Integraciones",
+                                text: "Conexión con otras herramientas para ampliar las capacidades del bot."
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            },
+
+
+            automatizaciones: {
+
+                image: "imagenes/automatizaciones.jpg",
+
+                title: "AUTOMATIZACIONES",
+
+                description:
+                    "Automatización de procesos para ahorrar tiempo y reducir tareas repetitivas.",
+
+                sections: [
+
+                    {
+                        title: "Procesos",
+
+                        items: [
+
+                            {
+                                name: "Flujos automáticos",
+                                text: "Creación de procesos que ejecutan diferentes acciones automáticamente."
+                            },
+
+                            {
+                                name: "Conexión de herramientas",
+                                text: "Integración entre diferentes plataformas y servicios."
+                            },
+
+                            {
+                                name: "Ahorro de tiempo",
+                                text: "Reducción de tareas repetitivas mediante procesos automatizados."
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            },
+
+
+            sistemas: {
+
+                image: "imagenes/sistemas.jpg",
+
+                title: "SISTEMAS",
+
+                description:
+                    "Sistemas personalizados para organizar información y procesos.",
+
+                sections: [
+
+                    {
+                        title: "Soluciones",
+
+                        items: [
+
+                            {
+                                name: "Control de información",
+                                text: "Organización de datos para facilitar el seguimiento de diferentes procesos."
+                            },
+
+                            {
+                                name: "Google Sheets y Excel",
+                                text: "Creación de sistemas conectados a hojas de cálculo."
+                            },
+
+                            {
+                                name: "Sistemas personalizados",
+                                text: "Soluciones adaptadas a las necesidades específicas de cada proyecto."
+                            }
+
+                        ]
+
+                    }
+
+                ]
+
+            }
+
+        };
+
+
+
+        /* ============================================
+           CAMBIAR FILMMAKER / AGENCIA
+        ============================================ */
+
+        function mostrarSeccion(tipo) {
+
+            const body =
+                document.body;
+
+            const filmmakerBtn =
+                document.getElementById(
+                    "filmmakerBtn"
+                );
+
+            const agencyBtn =
+                document.getElementById(
+                    "agencyBtn"
+                );
+
+            const filmmakerServices =
+                document.getElementById(
+                    "filmmakerServicesShowcase"
+                );
+
+            const agencyServices =
+                document.getElementById(
+                    "agencyServicesShowcase"
+                );
+
+            const transition =
+                document.getElementById(
+                    "colorTransition"
+                );
+
+
+            if (tipo === "filmmaker") {
+
+                body.classList.remove(
+                    "agency-mode"
+                );
+
+                body.classList.add(
+                    "filmmaker-mode"
+                );
+
+                filmmakerBtn.classList.add(
+                    "active"
+                );
+
+                agencyBtn.classList.remove(
+                    "active"
+                );
+
+                filmmakerServices.style.display =
+                    "grid";
+
+                agencyServices.style.display =
+                    "none";
+
+            }
+
+
+            if (tipo === "agency") {
+
+                body.classList.remove(
+                    "filmmaker-mode"
+                );
+
+                body.classList.add(
+                    "agency-mode"
+                );
+
+                filmmakerBtn.classList.remove(
+                    "active"
+                );
+
+                agencyBtn.classList.add(
+                    "active"
+                );
+
+                filmmakerServices.style.display =
+                    "none";
+
+                agencyServices.style.display =
+                    "grid";
+
+            }
+
+
+            transition.classList.remove(
+                "animate"
+            );
+
+            void transition.offsetWidth;
+
+            transition.classList.add(
+                "animate"
+            );
+
+        }
+
+
+
+        /* ============================================
+           ABRIR SERVICIO
+        ============================================ */
+
+        /* TABLAS DE SERVICIOS: edita aquí el texto de cada fila [Área, Servicios] */
+        const serviceTables = {
+            ediciones: [
+                ["Edición visual", "Cortes · Reencuadre · Zoom · Transiciones"],
+                ["Texto", "Subtítulos · Textos animados · Títulos"],
+                ["Sonido", "Limpieza de voz · Música · Efectos"],
+                ["Recursos", "B-Roll · GIFs · Memes"],
+                ["Formato", "TikTok · Reels · Shorts (9:16)"]
+            ],
+            asesoria: [
+                ["Contenido", "Ideas · Temas · Nichos · Formatos"],
+                ["Hooks", "Primeros segundos · Ganchos · Atención"],
+                ["Retención", "Ritmo · Estructura · Interés"],
+                ["TikTok SEO", "Palabras clave · Descripción · Hashtags"],
+                ["Plan", "Plan de contenido · Mejoras para tus videos"]
+            ],
+            creador: [
+                ["Ideas", "Conceptos · Temas · Series"],
+                ["Guiones", "Hook · Estructura · CTA"],
+                ["Producción", "Encuadre · Audio · Formato vertical"],
+                ["Edición", "Cortes · Subtítulos · Ritmo"],
+                ["Publicación", "TikTok · Reels · Shorts (9:16)"]
+            ]
+        };
+
+        function openService(serviceName) {
+
+             const service =
+        servicesData[serviceName];
+
+    if (!service) return;
+
+
+    const modal =
+        document.getElementById(
+            "serviceDetail"
+        );
+
+    const image =
+        document.getElementById(
+            "serviceDetailImage"
+        );
+
+    const title =
+        document.getElementById(
+            "serviceDetailTitle"
+        );
+
+    const description =
+        document.getElementById(
+            "serviceDetailDescription"
+        );
+
+    const sections =
+        document.getElementById(
+            "serviceDetailSections"
+        );
+
+
+    image.src =
+        service.image;
+
+    image.alt =
+        service.title;
+
+    title.textContent =
+        service.title;
+
+    description.textContent =
+        service.description;
+
+
+    sections.innerHTML = "";
+
+
+    /* =====================================
+       TABLA PARA EDICIONES
+       ===================================== */
+
+    if (serviceTables[serviceName]) {
+
+        const table =
+            document.createElement(
+                "div"
+            );
+
+        table.className =
+            "services-table";
+
+
+        /* ENCABEZADO */
+
+        const header =
+            document.createElement(
+                "div"
+            );
+
+        header.className =
+            "services-table-header";
+
+
+        const areaHeader =
+            document.createElement(
+                "div"
+            );
+
+        areaHeader.textContent =
+            "Área";
+
+
+        const servicesHeader =
+            document.createElement(
+                "div"
+            );
+
+        servicesHeader.textContent =
+            "Servicios";
+
+
+        header.appendChild(
+            areaHeader
+        );
+
+        header.appendChild(
+            servicesHeader
+        );
+
+        table.appendChild(
+            header
+        );
+
+
+        /* FILAS */
+
+        const rows = serviceTables[serviceName];
+
+
+        rows.forEach(
+            function(row) {
+
+                const rowElement =
+                    document.createElement(
+                        "div"
+                    );
+
+                rowElement.className =
+                    "services-table-row";
+
+
+                const area =
+                    document.createElement(
+                        "div"
+                    );
+
+                area.textContent =
+                    row[0];
+
+
+                const serviceList =
+                    document.createElement(
+                        "div"
+                    );
+
+                serviceList.textContent =
+                    row[1];
+
+
+                rowElement.appendChild(
+                    area
+                );
+
+                rowElement.appendChild(
+                    serviceList
+                );
+
+
+                table.appendChild(
+                    rowElement
+                );
+
+            }
+        );
+
+
+        sections.appendChild(
+            table
+        );
+
+
+    } else {
+
+        /* =====================================
+           RESTO DE SERVICIOS
+           ===================================== */
+
+        service.sections.forEach(
+            function(section) {
+
+                const sectionElement =
+                    document.createElement(
+                        "div"
+                    );
+
+                sectionElement.className =
+                    "service-info-section";
+
+
+                const sectionTitle =
+                    document.createElement(
+                        "h3"
+                    );
+
+                sectionTitle.textContent =
+                    section.title;
+
+
+                const itemsContainer =
+                    document.createElement(
+                        "div"
+                    );
+
+                itemsContainer.className =
+                    "service-info-items";
+
+
+                section.items.forEach(
+                    function(item) {
+
+                        const itemElement =
+                            document.createElement(
+                                "div"
+                            );
+
+                        itemElement.className =
+                            "service-info-item";
+
+
+                        const itemName =
+                            document.createElement(
+                                "h4"
+                            );
+
+                        itemName.textContent =
+                            item.name;
+
+
+                        const itemText =
+                            document.createElement(
+                                "p"
+                            );
+
+                        itemText.textContent =
+                            item.text;
+
+
+                        itemElement.appendChild(
+                            itemName
+                        );
+
+                        itemElement.appendChild(
+                            itemText
+                        );
+
+                        itemsContainer.appendChild(
+                            itemElement
+                        );
+
+                    }
+                );
+
+
+                sectionElement.appendChild(
+                    sectionTitle
+                );
+
+                sectionElement.appendChild(
+                    itemsContainer
+                );
+
+                sections.appendChild(
+                    sectionElement
+                );
+
+            }
+        );
+
+    }
+
+
+    document.body.style.overflow =
+        "hidden";
+
+
+    modal.classList.add(
+        "active"
+    );
+
+        }
+
+
+
+        /* ============================================
+           CERRAR SERVICIO
+        ============================================ */
+
+        function closeService() {
+
+            const modal =
+                document.getElementById(
+                    "serviceDetail"
+                );
+
+            modal.classList.remove(
+                "active"
+            );
+
+            document.body.style.overflow =
+                "";
+
+        }
+
+
+
+        /* ============================================
+           ESCAPE
+        ============================================ */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    closeService();
+
+                    cerrarPrecios();
+
+                }
+
+            }
+        );
+
+
+
+        /* ============================================
+           CERRAR AL HACER CLICK FUERA
+        ============================================ */
+
+        document
+            .getElementById(
+                "serviceDetail"
+            )
+            .addEventListener(
+                "click",
+                function(event) {
+
+                    if (
+                        event.target === this
+                    ) {
+
+                        closeService();
+
+                    }
+
+                }
+            );
+
+
+
+        /* ============================================
+           WHATSAPP
+        ============================================ */
+
+        function contactarWhatsApp(detalle) {
+
+            const numero =
+                "59177519149";
+
+            const mensaje = detalle ? "Hola, me interesa: " + detalle : "Hola, estoy interesado en uno de tus servicios.";
+
+            const url =
+                "https://wa.me/" +
+                numero +
+                "?text=" +
+                encodeURIComponent(
+                    mensaje
+                );
+
+            window.open(
+                url,
+                "_blank"
+            );
+
+        }
+
+
+
+        /* ============================================
+           PRECIOS
+        ============================================ */
+
+        (function () {
+            const track = document.getElementById("projectsTrack");
+            if (!track) return;
+            const cards = Array.from(track.children);
+            const dots = document.getElementById("carouselDots");
+            const wrap = document.getElementById("projectsCarousel");
+            let timer;
+            function irA(i) {
+                const c = cards[(i + cards.length) % cards.length];
+                track.scrollTo({ left: c.offsetLeft - (track.clientWidth - c.clientWidth) / 2, behavior: "smooth" });
+            }
+            function actual() {
+                const centro = track.scrollLeft + track.clientWidth / 2;
+                let m = 0, d = Infinity;
+                cards.forEach(function (c, i) {
+                    const x = Math.abs(c.offsetLeft + c.clientWidth / 2 - centro);
+                    if (x < d) { d = x; m = i; }
+                });
+                return m;
+            }
+            function marcar() {
+                const a = actual();
+                cards.forEach(function (c, i) { c.classList.toggle("is-active", i === a); });
+                Array.from(dots.children).forEach(function (b, i) { b.classList.toggle("active", i === a); });
+            }
+            function auto() {
+                clearInterval(timer);
+                if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                    timer = setInterval(function () { irA(actual() + 1); }, 4500);
+                }
+            }
+            cards.forEach(function (_, i) {
+                const b = document.createElement("button");
+                b.setAttribute("aria-label", "Proyecto " + (i + 1));
+                b.onclick = function () { irA(i); };
+                dots.appendChild(b);
+            });
+            window.moverCarrusel = function (n) { irA(actual() + n); };
+            track.addEventListener("scroll", marcar, { passive: true });
+            ["mouseenter", "focusin", "touchstart"].forEach(function (e) {
+                wrap.addEventListener(e, function () { clearInterval(timer); }, { passive: true });
+            });
+            ["mouseleave", "focusout"].forEach(function (e) { wrap.addEventListener(e, auto); });
+            marcar(); auto();
+        })();
+
+        let toastTimer;
+        function muyPronto() {
+            const t = document.getElementById("toast");
+            t.textContent = "Muy pronto";
+            t.classList.add("show");
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(function () { t.classList.remove("show"); }, 2500);
+        }
+
+        const pricingData = {
+            filmmaker: [
+                { name: "Videos largos", rows: [
+                    ["1-3 min", "$12-15"], ["3-5 min", "$18-20"], ["5-7 min", "$22-25"],
+                    ["10-15 min", "$23-30"], ["15-20 min", "$40-50"], ["20-30 min", "$50-65"] ] },
+                { name: "Shorts / Reels / TikTok", rows: [
+                    ["15-30 segundos", "$6-8"], ["30-60 segundos", "$10-12"], ["1-2 minutos", "$12-15"] ] },
+                { name: "Curso personal", tag: "PILOTO", solo: "Solo por cotización", cta: "Pedir información", msg: "el curso personal",
+                  desc: "Aprende a usar CapCut en celular o PC (gratis o Pro): tipos de edición, guiones y cómo grabar." }
+            ],
+            agency: [
+                { name: "Página Web", price: "Desde $150", note: "Landing o portafolio",
+                  items: ["Diseño adaptable", "SEO básico", "Botón de WhatsApp"] },
+                { name: "Bot de IA", price: "Desde $120", note: "Para WhatsApp o web", badge: "MÁS POPULAR",
+                  items: ["Responde preguntas frecuentes", "Entrenado con tu negocio", "Soporte inicial"] },
+                { name: "Automatización", price: "Desde $60", note: "Flujos y sistemas",
+                  items: ["Conexión entre herramientas", "Google Sheets y Excel", "Menos tareas repetitivas"] }
+            ]
+        };
+
+        const avisoPrecios = {
+            filmmaker: "Los precios pueden variar dependiendo de la complejidad de la edición, la cantidad de material y el trabajo requerido.",
+            agency: "Precios en USD. Los proyectos a medida se cotizan por WhatsApp."
+        };
+
+        function mostrarPrecios(tipo) {
+            document.querySelectorAll(".price-tabs button").forEach(function(b, i) {
+                b.classList.toggle("active", (i === 0) === (tipo === "filmmaker"));
+            });
+            document.getElementById("priceGrid").innerHTML = pricingData[tipo].map(function(p) {
+                const cta = `<button class="whatsapp-button price-cta" onclick="contactarWhatsApp('${p.msg || p.name}')">${p.cta || "Cotizar"}</button>`;
+                const badge = p.badge ? `<span class="price-badge">${p.badge}</span>` : "";
+                if (p.rows) {
+                    return `<div class="price-card rate-card">
+                        <h3>${p.name}</h3>
+                        <div class="rate-list">${p.rows.map(function(r) { return `<div class="rate-row"><span>${r[0]}</span><strong>${r[1]}</strong></div>`; }).join("")}</div>
+                        ${cta}
+                    </div>`;
+                }
+                if (p.solo) {
+                    return `<div class="price-card rate-card pilot-card">
+                        <span class="price-badge pilot-badge">${p.tag}</span>
+                        <h3>${p.name}</h3>
+                        <p class="pilot-desc">${p.desc}</p>
+                        <p class="price-note">${p.solo}</p>
+                        ${cta}
+                    </div>`;
+                }
+                return `<div class="price-card${p.badge ? " featured" : ""}">
+                    ${badge}
+                    <h3>${p.name}</h3>
+                    <div class="price">${p.price}</div>
+                    <p class="price-note">${p.note}</p>
+                    ${p.items.map(function(t) { return `<p>${t}</p>`; }).join("")}
+                    ${cta}
+                </div>`;
+            }).join("") + `<p class="price-disclaimer">${avisoPrecios[tipo]}</p>`;
+        }
+
+        function abrirPrecios() {
+            mostrarPrecios(document.body.classList.contains("agency-mode") ? "agency" : "filmmaker");
+
+            document
+                .getElementById(
+                    "priceModal"
+                )
+                .classList.add(
+                    "show"
+                );
+
+        }
+
+
+        function cerrarPrecios() {
+
+            document
+                .getElementById(
+                    "priceModal"
+                )
+                .classList.remove(
+                    "show"
+                );
+
+        }
+
+
+
+        /* ============================================
+           LUZ DEL MOUSE
+        ============================================ */
+
+        let mouseX =
+            window.innerWidth / 2;
+
+        let mouseY =
+            window.innerHeight / 2;
+
+        let currentX =
+            mouseX;
+
+        let currentY =
+            mouseY;
+
+
+        document.addEventListener(
+            "mousemove",
+            function(event) {
+
+                mouseX =
+                    event.clientX;
+
+                mouseY =
+                    event.clientY;
+
+            }
+        );
+
+
+        function animateMouseLight() {
+
+            currentX +=
+                (
+                    mouseX -
+                    currentX
+                ) * 0.12;
+
+            currentY +=
+                (
+                    mouseY -
+                    currentY
+                ) * 0.12;
+
+
+            const light =
+                document.getElementById(
+                    "globalMouseLight"
+                );
+
+            light.style.left =
+                currentX + "px";
+
+            light.style.top =
+                currentY + "px";
+
+
+            requestAnimationFrame(
+                animateMouseLight
+            );
+
+        }
+
+
+        animateMouseLight();
+
+        document.getElementById("priceModal").addEventListener("click", function(e) {
+            if (e.target === this) cerrarPrecios();
+        });
+
+        document.querySelectorAll(".service-showcase-card").forEach(function(card) {
+            card.addEventListener("keydown", function(e) {
+                if (e.key === "Enter" || e.key === " ") { e.preventDefault(); card.click(); }
+            });
+        });
+
+
+
+        /* ============================================
+           MOVIMIENTO HERO
+        ============================================ */
+
+        const heroImage =
+            document.querySelector(
+                ".hero-image"
+            );
+
+        const mainImage =
+            document.getElementById(
+                "mainImage"
+            );
+
+
+        if (heroImage && mainImage) {
+
+            heroImage.addEventListener(
+                "mousemove",
+                function(event) {
+
+                    const rect =
+                        heroImage.getBoundingClientRect();
+
+                    const x =
+                        event.clientX -
+                        rect.left;
+
+                    const y =
+                        event.clientY -
+                        rect.top;
+
+
+                    const percentX =
+                        (x / rect.width) *
+                        100;
+
+                    const percentY =
+                        (y / rect.height) *
+                        100;
+
+
+                    const moveX =
+                        (
+                            percentX -
+                            50
+                        ) * 0.10;
+
+                    const moveY =
+                        (
+                            percentY -
+                            50
+                        ) * 0.10;
+
+
+                    mainImage.style.transform =
+                        `translate(${moveX}px, ${moveY}px) scale(1.035)`;
+
+                }
+            );
+
+
+            heroImage.addEventListener(
+                "mouseleave",
+                function() {
+
+                    mainImage.style.transform =
+                        "translate(0, 0) scale(1)";
+
+                }
+            );
+
+        }
+
+
+
+        /* ============================================
+           SCROLL HERO
+        ============================================ */
+
+        function updateHeroScroll() {
+
+            const container =
+                document.querySelector(
+                    ".hero-image-container"
+                );
+
+            if (!container) return;
+
+
+            const rect =
+                container.getBoundingClientRect();
+
+            const windowHeight =
+                window.innerHeight;
+
+
+            let progress =
+                1 -
+                (
+                    rect.top /
+                    (
+                        windowHeight *
+                        0.75
+                    )
+                );
+
+
+            progress =
+                Math.max(
+                    0,
+                    Math.min(
+                        1,
+                        progress
+                    )
+                );
+
+
+            container.style.setProperty(
+                "--scroll-progress",
+                progress
+            );
+
+        }
+
+
+        window.addEventListener(
+            "scroll",
+            updateHeroScroll
+        );
+
+
+        updateHeroScroll();
+
+    </script>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>
