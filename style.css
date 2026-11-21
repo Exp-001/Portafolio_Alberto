@@ -329,13 +329,16 @@ main {
 .logo {
 
     font-size:
-        18px;
+        clamp(14px, 3.6vw, 18px);
 
     font-weight:
         800;
 
     letter-spacing:
-        1px;
+        1.5px;
+
+    text-align:
+        center;
 
     color:
         var(--primary);
@@ -1114,6 +1117,36 @@ main {
     color:
         var(--primary);
 
+}
+
+.hero-rotator {
+    display: block;
+    margin-top: 8px;
+    transition:
+        opacity 0.45s cubic-bezier(.22, .61, .36, 1),
+        transform 0.45s cubic-bezier(.22, .61, .36, 1),
+        filter 0.45s ease;
+    will-change: opacity, transform, filter;
+}
+
+.hero-rotator.is-exiting {
+    opacity: 0;
+    transform: translateY(-18px);
+    filter: blur(6px);
+}
+
+.hero-rotator.is-entering {
+    opacity: 0;
+    transform: translateY(18px);
+    filter: blur(6px);
+    transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-rotator {
+        transition: none;
+        filter: none;
+    }
 }
 
 
@@ -3772,3 +3805,169 @@ body.agency-mode .platforms-line { display: none; }
 .pilot-badge { background: #050505; border: 1px solid var(--primary); color: var(--primary); }
 .pilot-desc { color: var(--text-soft); line-height: 1.6; text-align: center; }
 .pilot-card .price-note { margin-top: 12px; font-size: 18px; text-align: center; }
+
+/* =========================================================
+   REVEAL AL HACER SCROLL (FADE-IN + SLIDE-UP)
+========================================================= */
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s cubic-bezier(.22, .61, .36, 1),
+        transform 0.8s cubic-bezier(.22, .61, .36, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    will-change: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* =========================================================
+   TARIFAS DE EDICIÓN, ENTREGA PRIORITARIA Y CONDICIONES
+========================================================= */
+
+.price-intro {
+    grid-column: 1 / -1;
+    margin-bottom: 4px;
+}
+
+.price-intro h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--text);
+    margin-bottom: 6px;
+}
+
+.price-intro p {
+    color: var(--text-soft);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.tier-card {
+    padding: 24px;
+    min-width: 0;
+}
+
+.tier-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin-bottom: 16px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+}
+
+.tier-head h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.tier-price {
+    margin: 0;
+    font-size: clamp(26px, 3vw, 34px);
+    line-height: 1.1;
+}
+
+.tier-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.tier-spec {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-soft);
+}
+
+.tier-spec strong {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.price-priority-box {
+    grid-column: 1 / -1;
+    padding: 18px 22px;
+    border: 1px solid var(--primary);
+    border-radius: var(--radius);
+    background: var(--primary-soft);
+}
+
+.price-priority-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.price-priority-head h4 {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.price-priority-tag {
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.price-priority-box p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.price-conditions-box {
+    grid-column: 1 / -1;
+    padding: 20px 22px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.price-conditions-box h4 {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.price-conditions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price-condition-item {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: var(--text-soft);
+}
+
+.price-condition-item strong {
+    color: var(--text);
+}
+
+

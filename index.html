@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Creador digital y editor de video para TikTok y Reels</title>
-    <meta name="description" content="Soy creador digital y edito videos para TikTok, Facebook Reels, Instagram y YouTube Shorts. Mira mis trabajos y cotiza por WhatsApp.">
+    <title>NIVEUS URSUS TECHNOLOGY | Creador digital y editor de video para TikTok y Reels</title>
+    <meta name="description" content="NIVEUS URSUS TECHNOLOGY — Creador digital y editor de videos para TikTok, Facebook Reels, Instagram y YouTube Shorts. Mira mis trabajos y cotiza por WhatsApp.">
     <meta name="theme-color" content="#050505">
     <link rel="canonical" href="https://TUUSUARIO.github.io/NOMBRE-REPO/">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://TUUSUARIO.github.io/NOMBRE-REPO/">
-    <meta property="og:title" content="Creador digital y editor de video">
+    <meta property="og:title" content="NIVEUS URSUS TECHNOLOGY — Creador digital y editor de video">
     <meta property="og:description" content="Edición de videos para TikTok, Reels y Shorts. Cotiza por WhatsApp.">
     <meta property="og:image" content="https://TUUSUARIO.github.io/NOMBRE-REPO/imagenes/preview.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"ProfessionalService","name":"Alberto Editor de Videos","url":"https://TUUSUARIO.github.io/NOMBRE-REPO/","description":"Creador digital y editor de video para redes sociales.","serviceType":["Edición de video para redes sociales","Asesoría de contenido","Creación de contenido"]}
+    {"@context":"https://schema.org","@type":"ProfessionalService","name":"NIVEUS URSUS TECHNOLOGY","url":"https://TUUSUARIO.github.io/NOMBRE-REPO/","description":"Creador digital y editor de video para redes sociales.","serviceType":["Edición de video para redes sociales","Asesoría de contenido","Creación de contenido"]}
     </script>
 
     <link rel="stylesheet" href="style.css">
@@ -46,7 +46,7 @@
     <nav class="navbar" aria-label="Principal">
 
         <div class="logo">
-            MI PORTAFOLIO
+            NIVEUS URSUS TECHNOLOGY
         </div>
 
         <div class="nav-links">
@@ -179,7 +179,7 @@
             <h1 class="hero-text">
 
                 Transformo ideas en
-                <span>proyectos digitales.</span>
+                <span class="hero-rotator" id="heroRotator">proyectos digitales.</span>
 
             </h1>
 
@@ -1543,15 +1543,52 @@
             toastTimer = setTimeout(function () { t.classList.remove("show"); }, 2500);
         }
 
+        const pricingIntro = {
+            filmmaker: {
+                title: "Tarifas de edición",
+                subtitle: "Tres niveles de edición para videos cortos (TikTok, Reels, Shorts). Cada nivel incluye todo lo del anterior."
+            }
+        };
+
         const pricingData = {
             filmmaker: [
-                { name: "Videos largos", rows: [
-                    ["1-3 min", "$12-15"], ["3-5 min", "$18-20"], ["5-7 min", "$22-25"],
-                    ["10-15 min", "$23-30"], ["15-20 min", "$40-50"], ["20-30 min", "$50-65"] ] },
-                { name: "Shorts / Reels / TikTok", rows: [
-                    ["15-30 segundos", "$6-8"], ["30-60 segundos", "$10-12"], ["1-2 minutos", "$12-15"] ] },
-                { name: "Curso personal", tag: "PILOTO", solo: "Solo por cotización", cta: "Pedir información", msg: "el curso personal",
-                  desc: "Aprende a usar CapCut en celular o PC (gratis o Pro): tipos de edición, guiones y cómo grabar." }
+                {
+                    name: "Básico",
+                    price: "$5-10",
+                    msg: "la tarifa de edición Básica ($5-10)",
+                    cta: "Cotizar Básico",
+                    specs: [
+                        ["Recibo", "video bruto de hasta 5 min"],
+                        ["Entrego", "video de 30 s a 1 min"],
+                        ["Incluye", "cortes, título corto, subtítulos, música y efectos de sonido básicos"],
+                        ["Revisiones", "1"]
+                    ]
+                },
+                {
+                    name: "Intermedio",
+                    price: "$10-15",
+                    featured: true,
+                    msg: "la tarifa de edición Intermedia ($10-15)",
+                    cta: "Cotizar Intermedio",
+                    specs: [
+                        ["Recibo", "video bruto de hasta 15 min"],
+                        ["Entrego", "video de 1 min a 1 min 30 s"],
+                        ["Incluye", "todo lo del básico, más subtítulos animados, palabras clave destacadas, transiciones, trabajo de ritmo y más efectos de sonido"],
+                        ["Revisiones", "2"]
+                    ]
+                },
+                {
+                    name: "Avanzado",
+                    price: "$15-20",
+                    msg: "la tarifa de edición Avanzada ($15-20)",
+                    cta: "Cotizar Avanzado",
+                    specs: [
+                        ["Recibo", "video bruto de hasta 20 min o varios clips"],
+                        ["Entrego", "video de 1 a 3 min"],
+                        ["Incluye", "todo lo del intermedio, más animaciones, efectos visuales, corrección de color y portada o miniatura"],
+                        ["Revisiones", "2"]
+                    ]
+                }
             ],
             agency: [
                 { name: "Página Web", price: "Desde $150", note: "Landing o portafolio",
@@ -1563,8 +1600,24 @@
             ]
         };
 
+        const pricingExtras = {
+            filmmaker: {
+                priority: {
+                    title: "Entrega prioritaria",
+                    price: "+$5",
+                    text: "En cualquiera de los 3 niveles, si hay fila de espera, por $5 extra tu video pasa al frente de la fila."
+                },
+                conditionsTitle: "Condiciones",
+                conditions: [
+                    ["Pago", "50% por adelantado y el otro 50% al entregar el video completo."],
+                    ["Tiempo de entrega", "entre 24 y 48 horas. Puede variar según la dificultad del video, y se confirma antes de empezar."],
+                    ["Precio dentro del rango", "depende de la duración del material bruto y de la dificultad, y se confirma antes de empezar."]
+                ]
+            }
+        };
+
         const avisoPrecios = {
-            filmmaker: "Los precios pueden variar dependiendo de la complejidad de la edición, la cantidad de material y el trabajo requerido.",
+            filmmaker: "",
             agency: "Precios en USD. Los proyectos a medida se cotizan por WhatsApp."
         };
 
@@ -1572,25 +1625,30 @@
             document.querySelectorAll(".price-tabs button").forEach(function(b, i) {
                 b.classList.toggle("active", (i === 0) === (tipo === "filmmaker"));
             });
-            document.getElementById("priceGrid").innerHTML = pricingData[tipo].map(function(p) {
+
+            const intro = pricingIntro[tipo]
+                ? `<div class="price-intro"><h3>${pricingIntro[tipo].title}</h3><p>${pricingIntro[tipo].subtitle}</p></div>`
+                : "";
+
+            const cards = pricingData[tipo].map(function(p) {
                 const cta = `<button class="whatsapp-button price-cta" onclick="contactarWhatsApp('${p.msg || p.name}')">${p.cta || "Cotizar"}</button>`;
                 const badge = p.badge ? `<span class="price-badge">${p.badge}</span>` : "";
-                if (p.rows) {
-                    return `<div class="price-card rate-card">
-                        <h3>${p.name}</h3>
-                        <div class="rate-list">${p.rows.map(function(r) { return `<div class="rate-row"><span>${r[0]}</span><strong>${r[1]}</strong></div>`; }).join("")}</div>
+
+                if (p.specs) {
+                    return `<div class="price-card tier-card${p.featured ? " featured" : ""}">
+                        <div class="tier-head">
+                            <h3>${p.name}</h3>
+                            <div class="price tier-price">${p.price}</div>
+                        </div>
+                        <div class="tier-specs">
+                            ${p.specs.map(function(s) {
+                                return `<div class="tier-spec"><strong>${s[0]}:</strong> <span>${s[1]}</span></div>`;
+                            }).join("")}
+                        </div>
                         ${cta}
                     </div>`;
                 }
-                if (p.solo) {
-                    return `<div class="price-card rate-card pilot-card">
-                        <span class="price-badge pilot-badge">${p.tag}</span>
-                        <h3>${p.name}</h3>
-                        <p class="pilot-desc">${p.desc}</p>
-                        <p class="price-note">${p.solo}</p>
-                        ${cta}
-                    </div>`;
-                }
+
                 return `<div class="price-card${p.badge ? " featured" : ""}">
                     ${badge}
                     <h3>${p.name}</h3>
@@ -1599,7 +1657,32 @@
                     ${p.items.map(function(t) { return `<p>${t}</p>`; }).join("")}
                     ${cta}
                 </div>`;
-            }).join("") + `<p class="price-disclaimer">${avisoPrecios[tipo]}</p>`;
+            }).join("");
+
+            const extra = pricingExtras[tipo];
+            const extrasHtml = extra
+                ? `<div class="price-priority-box">
+                        <div class="price-priority-head">
+                            <h4>${extra.priority.title}</h4>
+                            <span class="price-priority-tag">${extra.priority.price}</span>
+                        </div>
+                        <p>${extra.priority.text}</p>
+                   </div>
+                   <div class="price-conditions-box">
+                        <h4>${extra.conditionsTitle}</h4>
+                        <div class="price-conditions-list">
+                            ${extra.conditions.map(function(c) {
+                                return `<div class="price-condition-item"><strong>${c[0]}:</strong> <span>${c[1]}</span></div>`;
+                            }).join("")}
+                        </div>
+                   </div>`
+                : "";
+
+            const disclaimer = avisoPrecios[tipo]
+                ? `<p class="price-disclaimer">${avisoPrecios[tipo]}</p>`
+                : "";
+
+            document.getElementById("priceGrid").innerHTML = intro + cards + extrasHtml + disclaimer;
         }
 
         function abrirPrecios() {
@@ -1842,6 +1925,130 @@
 
 
         updateHeroScroll();
+
+
+        /* ============================================
+           REVEAL AL HACER SCROLL (INTERSECTION OBSERVER)
+        ============================================ */
+
+        (function () {
+
+            const sections =
+                document.querySelectorAll(
+                    ".services-section, .projects-section, .contact-section"
+                );
+
+            if (!sections.length) return;
+
+            const prefersReduced =
+                window.matchMedia &&
+                window.matchMedia(
+                    "(prefers-reduced-motion: reduce)"
+                ).matches;
+
+            if (
+                !("IntersectionObserver" in window) ||
+                prefersReduced
+            ) {
+                sections.forEach(function (section) {
+                    section.classList.add(
+                        "is-visible"
+                    );
+                });
+                return;
+            }
+
+            sections.forEach(function (section) {
+                section.classList.add(
+                    "reveal-on-scroll"
+                );
+            });
+
+            const observer =
+                new IntersectionObserver(
+                    function (entries, obs) {
+                        entries.forEach(function (entry) {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add(
+                                    "is-visible"
+                                );
+                                obs.unobserve(
+                                    entry.target
+                                );
+                            }
+                        });
+                    },
+                    {
+                        threshold: 0.05,
+                        rootMargin: "0px 0px -40px 0px"
+                    }
+                );
+
+            sections.forEach(function (section) {
+                observer.observe(section);
+            });
+
+        })();
+
+
+        /* ============================================
+           CICLO DE FRASES HERO (5 FRASES)
+        ============================================ */
+
+        (function () {
+
+            const el =
+                document.getElementById(
+                    "heroRotator"
+                );
+
+            if (!el) return;
+
+            const frases = [
+                "proyectos digitales.",
+                "publicidad convincente.",
+                "una historia para recordar.",
+                "videos que retienen.",
+                "contenido que conecta."
+            ];
+
+            const prefersReduced =
+                window.matchMedia &&
+                window.matchMedia(
+                    "(prefers-reduced-motion: reduce)"
+                ).matches;
+
+            if (prefersReduced) return;
+
+            let index = 0;
+
+            setInterval(function () {
+
+                el.classList.add("is-exiting");
+
+                setTimeout(function () {
+
+                    index =
+                        (index + 1) %
+                        frases.length;
+
+                    el.textContent =
+                        frases[index];
+
+                    el.classList.remove("is-exiting");
+                    el.classList.add("is-entering");
+
+                    void el.offsetWidth;
+
+                    requestAnimationFrame(function () {
+                        el.classList.remove("is-entering");
+                    });
+
+                }, 420);
+
+            }, 3200);
+
+        })();
 
     </script>
 
